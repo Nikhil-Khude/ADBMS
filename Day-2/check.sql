@@ -36,3 +36,12 @@ alter table employee8 drop check chk_empage_salary;
 insert into employee8 values(5,'anuska','naik',10,1000);
 select * from employee8;
 
+create table employee9(empid int not null,firstname varchar(50),lastname varchar(10),empdept varchar(10)default'operations');
+insert into employee9(empid,firstname,lastname)
+values (1,'rohit','sharma');
+insert into employee9(empid,firstname,lastname)
+values (2,'kirti','giri');
+select  * from employee9;
+
+
+
