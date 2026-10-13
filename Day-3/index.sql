@@ -1,4 +1,5 @@
-show databases;
+
+3show databases;
 use company_db;
 create table employee11(empid int primary key,firstname varchar(10),lastname varchar(10),empage int,salary int);
 -- to allow naming and defaing a check constraint on multiple columns
