@@ -49,4 +49,15 @@ select concat (custname,' ',last_name)as fullname from customer;
 select substr(custname,1,2)from customer;
 select instr(custname,'a')as position from customer;
 select substr(custname,1,2)from customer;
+select substr(custname,1,3),instr(custname,'a')
+from customer where cusr_id<3;
 
+/*date 7 time funtion*/
+select now();
+select now() as current_datetime;
+alter table customer add column date date;
+select * from  customer;
+update customer set date='2024/2/20' where cusr_id=1; 
+update customer set date='2024-08-24' where cusr_id=2; 
+update customer set date='2024-10-02' where cusr_id=3; 
+alter table customer drop column date;
